@@ -13,7 +13,7 @@ cap=cv2.VideoCapture(0)                                                      #Fo
 
 while True:
     ret,img=cap.read()              #Reading frame from webcam
-    
+    img=cv2.flip(img,1)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)    #Convert image to gray for analysis of face dtection
     
     
